@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title>RGB to HSL Converter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- DESCRIPTION -->
+	<meta name="keywords" content="rgb, hsl, converter">
+	<meta name="description" content="RGB to HSL converter">
+	<meta name="author" content="Andrey Zu">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="index.css" media="all">
+	<!-- JS -->
+	<script type="text/javascript" async src="index.js"></script>
+</head>
+<body>
+	<header><h1>RGB to HSL Converter</h1></header>
+	<main>
+		<section class="examples">
+			<h2 class="examples__header">Supported formats: HEX and RGB.</h2>
+		<dl class="examples__column">
+			<dt>Examples for RGB format:</dt>
+			<dd>45 65 23<br>
+				45, 65, 123<br>
+				rgb(255, 255, 255);
+			</dd>
+		</dl>
+		<dl class="examples__column">
+			<dt>Examples for HEX format:</dt>
+			<dd>#F60<br>
+				#FF6600<br>
+				FF 66 00</dd>
+		</dl>
+		</section>
+		<form class="converter" id="form">
+			<label class="converter__label" for="rgb">Enter the RGB or HEX color code:</label><br>
+			<input type="text" class="converter__input" id="rgb" placeholder="Enter the color code" required>
+			<button type="submit" class="converter__button" id="submit">Convert</button>
+		</form>
+		<p class="entered" id="entered">R: - G: - B: -</p>
+	</main>
+	<footer>
+		<p class="result" id="result">hsl(-, -, -);</p>
+		<p>The result is automatically copied to the clipboard.</p>
+	</footer>
+</body>
+</html>
